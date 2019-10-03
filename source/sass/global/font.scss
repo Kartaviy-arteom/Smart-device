@@ -30,3 +30,11 @@
     url("../fonts/Roboto-Medium.woff") format("woff");
 }
 
+body {
+  font-family: "PTMono-Regular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $font-color;
+}
+

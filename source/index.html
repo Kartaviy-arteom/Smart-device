@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body>
     <div style="display: none;">
@@ -27,40 +27,48 @@
       </svg>
     </div>
     <header class="header">
-      <a class="header__logo" href="#">
-        <svg width="52" height="52">
-          <use xlink:href="#logo"></use>
-        </svg>
-        <span>Smart Device</span>
-        <span>умные технологии</span>
-      </a>
-      <div class="header__contact">
-        <a class="header__mail" href="mailto:info@sd.ru">info@sd.ru</a>
-        <a class="header__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-        <a class="header__order-call btn" href="#">Заказать звонок</a>
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <svg width="52" height="52">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <div>
+            <span class="header__company-name">Smart Device</span>
+            <span class="header__tagline">умные технологии</span>
+          </div>
+        </a>
+        <div class="header__contact">
+          <a class="header__mail" href="mailto:info@sd.ru">info@sd.ru</a>
+          <a class="header__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+          <a class="header__order-call btn" href="#">Заказать звонок</a>
+        </div>
       </div>
     </header>
     <section class="first-screen">
-      <h1 class="first-screen__title">Печатные платы <span>производство и монтаж, поставка комплектующих, блоков и модулей</span></h1>
-      <a href="#" class="first-screen__btn btn">Получить бесплатную консультацию</a>
-      <span>Скролл вниз</span>
+      <div class="first-screen__wrapper">
+        <h1 class="visually-hidden">Печатные платы: производство и монтаж, поставка комплектующих, блоков и модулей</h1>
+        <strong class="first-screen__good">Печатные платы</strong>
+        <p class="first-screen__directions">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a href="#" class="first-screen__btn btn">Получить бесплатную консультацию</a>
+        <span class="first-screen__scroll">Скролл вниз</span>
+      </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
-        <li class="advantages__card">
+        <li class="advantages__card advantages__card--term">
           <h3 class="advantages__subtitle">Оперативные сроки</h3>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li class="advantages__card">
+        <li class="advantages__card advantages__card--suppliers">
           <h3 class="advantages__subtitle">Крупные поставщики</h3>
           <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
-        <li class="advantages__card">
+        <li class="advantages__card advantages__card--confidentiality">
           <h3 class="advantages__subtitle">Полная конфиденциальность</h3>
           <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
         </li>
-        <li class="advantages__card">
+        <li class="advantages__card advantages__card--cost">
           <h3 class="advantages__subtitle">Персонализация стоимости</h3>
           <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </li>

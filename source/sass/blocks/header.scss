@@ -1,0 +1,80 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &__wrapper {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__company-name {
+    font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__tagline {
+    font-family: "Roboto-Medium", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #788891;
+  }
+
+  &__contact {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  & a {
+    color: $header-font-color;
+  }
+
+  &__contact a:not(.btn) {
+    position: relative;
+    font-family: "PTMono-Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 7.625rem;
+    align-self: center;
+  }
+
+  &__order-call {
+    margin-left: 2.375rem;
+    border-color: $header-font-color;
+  }
+
+  &__contact a:not(.btn)::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+  }
+}
+
+.header__logo {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: $header-font-color;
+
+  & div {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

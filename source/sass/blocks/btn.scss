@@ -1,0 +1,14 @@
+.btn {
+  font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  min-width: 180px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 8px;
+}

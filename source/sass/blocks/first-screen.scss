@@ -1,0 +1,53 @@
+.first-screen {
+  padding-top: 100px;
+  background-color: $first-screen-color;
+  background-image: url("../img/first-screen-background-desktop@1x.png"),
+                    url("../img/circuit-board-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50%, 80% 50%;
+  color: $header-font-color;
+  background-size: cover, auto;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 74%;
+  }
+
+  &__good {
+    display: inline-block;
+    padding-top: 231px;
+    padding-bottom: 31px;
+    font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  &__directions {
+    margin: 0;
+    padding-left: 94px;
+    padding-bottom: 37px;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-left: 94px;
+    margin-bottom: 278px;
+    background-color: $btn-color;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: $header-font-color;
+  }
+
+  &__scroll {
+    position: absolute;
+    top: 785px;
+    left: 13%;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+  }
+}
