@@ -49,14 +49,32 @@
     align-self: center;
   }
 
+  &__contact a:first-child {
+    margin-left: 0;
+  }
+
   &__order-call {
     margin-left: 2.375rem;
     border-color: $header-font-color;
   }
 
+  &__mail::before {
+    width: 19px;
+    height: 14px;
+    background-image: url("../img/mail-icon.svg");
+  }
+
+  &__phone::before {
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone-icon.svg");
+  }
+
   &__contact a:not(.btn)::before {
     content: "";
     position: absolute;
+    background-position: 50%;
+    background-repeat: no-repeat;
     left: -20px;
     top: 0;
   }

@@ -2,11 +2,12 @@
   padding-top: 100px;
   background-color: $first-screen-color;
   background-image: url("../img/first-screen-background-desktop@1x.png"),
+                    url("../img/triangles.svg"),
                     url("../img/circuit-board-desktop@1x.png");
+  background-size: cover, cover, auto;
   background-repeat: no-repeat;
   background-position: 50%, 80% 50%;
   color: $header-font-color;
-  background-size: cover, auto;
 
   &__wrapper {
     margin: 0 auto;

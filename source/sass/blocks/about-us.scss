@@ -1,0 +1,27 @@
+.about-us__wrapper {
+  padding-bottom: 110px;
+  width: 61%;
+  margin: 0 auto;
+  background-image: url("../img/year-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-us__title {
+  padding-left: 180px;
+  margin-bottom: 18px;
+}
+
+.about-us {
+
+  & p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 180px;
+  }
+
+  &__btn {
+    margin-top: 15px;
+    margin-left: 180px;
+  }
+}
