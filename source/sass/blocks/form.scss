@@ -1,20 +1,21 @@
 .form {
+  padding-bottom: 71px;
   background-color: $advantages-color;
-  background-image: url("../img/triangles.svg");
+  background-image: url("../img/triangles.svg"), url("../img/paper-airplane@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  background-position: -856px -177px,350px 162px;
 }
 
 .form__wrapper {
   padding-top: 96px;
-  width: 32%;
-  margin: 0 14.5% 0 auto;
+  width: 29.8%;
+  margin: 0 19.5% 0 auto;
   color: #fff;
 
   p {
     margin: 0;
     padding-top: 7px;
-    margin-bottom: 47px;
+    margin-bottom: 51px;
     line-height: 22px;
   }
 
@@ -46,11 +47,12 @@
 }
 
 .form__wrapper input {
-  width: 45%;
+  width: 47.5%;
   margin-bottom: 40px;
 }
 
 .form__wrapper textarea {
+  padding-top: 12px;
   margin-bottom: 43px;
   width: 100%;
   max-height: 155px;
@@ -79,7 +81,10 @@
   position: relative;
   user-select: none;
   box-sizing: border-box;
-  padding-left: 32px;
+  padding-left: 27px;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 16px;
   width: 45%;
   opacity: 0.8;
   cursor: pointer;
@@ -91,8 +96,8 @@
   content: "";
   width: 16px;
   height: 16px;
-  left: -16px;
-  top: 0;
+  left: -5px;
+  top: 7px;
 }
 
 .form__wrapper input[type="checkbox"]~label::before {

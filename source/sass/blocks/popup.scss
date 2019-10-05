@@ -1,0 +1,110 @@
+.popup {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 33px 40px 33px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 490px;
+  background-color: $advantages-color;
+  color: #ffffff;
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  p {
+    margin: 0 0 30px 0;
+    line-height: 1.375;
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/btn-close-icon.svg);
+  }
+}
+
+.popup input,
+.popup textarea {
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 14px 16px;
+  line-height: 22px;
+}
+
+.popup textarea {
+  max-height: 105px;
+  min-height: 105px;
+  resize: none;
+}
+
+.popup input::placeholder,
+.popup textarea::placeholder {
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+.popup input[type="submit"] {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.popup input[type="checkbox"] {
+  display: none;
+}
+
+.popup input[type="checkbox"]~label {
+  display: block;
+  position: relative;
+  user-select: none;
+  box-sizing: border-box;
+  padding-left: 32px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.popup input[type="checkbox"]~label::before,
+.popup input[type="checkbox"]~label::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: -16px;
+  top: 0;
+}
+
+.popup input[type="checkbox"]~label::before {
+  border: 1px solid #FFFFFF;
+}
+
+.popup input[type="checkbox"]:checked~label::after {
+  background-image: url("../img/check-icon.svg");
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

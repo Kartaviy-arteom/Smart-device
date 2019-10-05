@@ -1,12 +1,20 @@
 .advantages {
   margin: 0;
   padding: 0;
-  padding-bottom: 110px;
+  padding-bottom: 3px;
   margin-top: 109px;
+  background-repeat: no-repeat;
+  background-image: url(../img/triangles/triangle-1.svg),
+                    url(../img/triangles/triangle-2.svg),
+                    url(../img/triangles/triangle-3.svg),
+                    url(../img/triangles/triangle-4.svg);
+  background-position: 0 330px, 53% 33px, 98.3% 346px, 13% -66px;
 
   &__list {
     width: 61%;
     margin: 0 auto;
+    margin-bottom: 73px;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -16,17 +24,18 @@
   }
 
   &__card {
-    width: 48%;
+    width: 48.7%;
     min-height: 300px;
-    padding-top: 98px;
+    padding-top: 95px;
     box-sizing: border-box;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 22px;
     padding-left: 2.75em;
-    padding-right: 2.75em;
+    padding-right: 2.5em;
     border: 1px solid $advantages-border-color;
     border-left: 3px solid $advantages-color;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: 45px 40px;
@@ -62,6 +71,7 @@
     background-color: $advantages-color;
     background-image: url(../img/watch-icon.svg);
     border-color: transparent;
+    background-size: 30px 35px;
 
     & .advantages__subtitle {
       color: #fff;

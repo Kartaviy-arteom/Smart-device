@@ -47,11 +47,11 @@
             <span class="header__tagline">умные технологии</span>
           </div>
         </a>
-        <div class="header__contact">
-          <a class="header__mail" href="mailto:info@sd.ru">info@sd.ru</a>
-          <a class="header__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-          <a class="header__order-call btn" href="#">Заказать звонок</a>
-        </div>
+        <ul class="header__contact">
+          <li><a class="header__mail" href="mailto:info@sd.ru">info@sd.ru</a></li>
+          <li><a class="header__phone" href="tel:+74950005252">+7 (495) 000 52 52</a></li>
+        </ul>
+        <a class="header__order-call btn" href="#">Заказать звонок</a>
       </div>
     </header>
     <section class="first-screen">
@@ -83,14 +83,14 @@
           <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </li>
       </ul>
-    </section>
-    <section class="about-us">
-      <div class="about-us__wrapper">
-        <h2 class="about-us__title title">О компании</h2>
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней</p>
-        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-        <a class="about-us__btn btn" href="#">Подробнее</a>
-      </div>
+      <section class="advantages__about-us about-us">
+        <div class="about-us__wrapper">
+          <h2 class="about-us__title title">О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <a class="about-us__btn btn" href="#">Подробнее</a>
+        </div>
+      </section>
     </section>
     <section class="service">
       <div class="service__wrapper">
@@ -175,24 +175,24 @@
         </div>
         <div class="footer__address">
           <h3 class="footer__title">Наш офис</h3>
-          <p><span>г. Мытищи, Олимпийский проспект, д.10</span>
-            <a class="footer__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a class="footer__phone" href="tel:+74950038767">+7 (925) 003-87-67</a>
-            <a class="footer__phone" href="tel:+749592608079">+7 (926) 926-080-79</a>
+          <p><span>г. Мытищи, Олимпийский проспект, д.10</span><br>
+            <a class="footer__phone" href="tel:+74955894050">+7 (495) 589-40-50</a><br>
+            <a class="footer__phone" href="tel:+74950038767">+7 (925) 003-87-67</a><br>
+            <a class="footer__phone" href="tel:+749592608079">+7 (926) 926-080-79</a><br>
           </p>
         </div>
       </div>
       <div class="footer__bottom">
         <div class="footer__wrapper">
-          <span class="footer__rights">Все права защищены</span>
-          <span class="footer__years">1999-2018 SD Service Devices</span>
-          <span class="footer__years">Условия конфиденциальности</span>
-          <span class="footer__conditions">Developed by wow studio</span>
+          <a class="footer__rights" href="#">Все права защищены</a>
+          <a class="footer__years" href="#">1999-2018 SD Service Devices</a>
+          <a class="footer__years" href="#">Условия конфиденциальности</a>
+          <a class="footer__conditions" href="#">Developed by wow studio</a>
         </div>
       </div>
     </footer>
     <section class="popup">
-      <h2>Закажите звонок</h2>
+      <h2 class="popup__title title">Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form method="post" action="#" autocomplete="off">
         <input type="text" placeholder="Имя" required="">
@@ -202,6 +202,7 @@
         <input type="checkbox" name="assent" id="assent" checked="" required="">
         <label for="assent">Я согласен на обработку персональных данных</label>
       </form>
+      <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
     </section>
   </body>
 </html>

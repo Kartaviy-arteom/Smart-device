@@ -10,12 +10,6 @@
   flex-wrap: wrap;
 }
 
-.footer a:not(.footer__logo, .footer__social-link),
-.footer p {
-  color: #1B2D37;
-  opacity: 0.5;
-}
-
 .footer__logo {
   margin-right: auto;
   margin-bottom: 53px;
@@ -94,7 +88,6 @@
 
 .footer__nav ul {
   margin: 0;
-
   padding: 0;
   list-style: none;
   display: flex;
@@ -107,6 +100,13 @@
   width: 50%;
 }
 
+.footer__nav a,
+.footer__address span,
+.footer__address a {
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
 .footer__wrapper {
   width: 74%;
   margin: 0 auto;
@@ -116,4 +116,10 @@
   flex-wrap: wrap;
 }
 
+.footer__bottom a {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  opacity: 0.5;
+}
 
