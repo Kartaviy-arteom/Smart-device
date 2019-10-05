@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 
-.footer a:not(.footer__logo),
+.footer a:not(.footer__logo, .footer__social-link),
 .footer p {
   color: #1B2D37;
   opacity: 0.5;
@@ -115,3 +115,5 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
