@@ -12,6 +12,14 @@
     width: 100%;
     height: 100%;
   }
+
+  a:hover, a:focus {
+  opacity: 0.8;
+}
+
+  a:active {
+    opacity: 0.6;
+  }
 }
 
 .card--production {
@@ -91,6 +99,20 @@
   width: 63px;
   height: 63px;
   background-position: 50%;
-    background-repeat: no-repeat;
-    background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-image: url("../img/arrow.svg");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .card--production {
+    background-image: url("../img/background-goods-1-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+  }
+
+  .card--mounting {
+    background-image: url("../img/background-goods-2-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+  }
+
+  .card--components {
+    background-image: url("../img/background-goods-3-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+  }
 }

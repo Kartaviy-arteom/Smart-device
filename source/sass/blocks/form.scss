@@ -6,6 +6,13 @@
   background-position: -856px -177px,350px 162px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .form {
+    background-image: url("../img/triangles.svg"), url("../img/paper-airplane@2x.png");
+    background-size: auto, 511px 288px;
+  }
+}
+
 .form__wrapper {
   padding-top: 96px;
   width: 29.8%;
@@ -109,4 +116,16 @@
   background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.form__wrapper input:hover,
+.form__wrapper input:focus,
+.form__wrapper textarea:hover,
+.form__wrapper textarea:focus {
+  opacity: 0.8;
+}
+
+.form__wrapper input:active,
+.form__wrapper textarea:active {
+  opacity: 0.6;
 }

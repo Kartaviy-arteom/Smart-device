@@ -14,3 +14,11 @@
   padding-top: 14px;
   padding-bottom: 8px;
 }
+
+.btn:hover, .btn:focus {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
+}

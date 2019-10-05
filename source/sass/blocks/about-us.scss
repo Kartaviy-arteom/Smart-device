@@ -27,3 +27,10 @@
     margin-left: 180px;
   }
 }
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about-us__wrapper {
+    background-image: url("../img/year-desktop@2x.png");
+    background-size: 220px 317px;
+  }
+}

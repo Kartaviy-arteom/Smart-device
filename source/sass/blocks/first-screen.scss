@@ -4,7 +4,6 @@
   background-image: url("../img/first-screen-background-desktop@1x.png"),
                     url("../img/circuit-board-desktop@1x.png"),
                     url("../img/triangles.svg");
-                    /* url("../img/circuit-board-desktop@1x.png"); */
   background-size: cover, auto, cover;
   background-repeat: no-repeat;
   background-position: 80% 50%, 85.3% 70.9%;
@@ -73,3 +72,14 @@
     color: #fff;
   }
 }
+
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .first-screen {
+    background-image: url("../img/first-screen-background-desktop@2x.png"),
+                      url("../img/circuit-board-desktop@2x.png"),
+                      url("../img/triangles.svg");
+    background-size: cover, 705px 515px, cover;
+  }
+}
+

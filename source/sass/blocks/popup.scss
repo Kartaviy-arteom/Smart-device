@@ -35,6 +35,15 @@
     background-repeat: no-repeat;
     background-image: url(../img/btn-close-icon.svg);
   }
+
+  &__button-close:hover,
+  &__button-close:focus {
+    opacity: 0.8;
+  }
+
+  &__button-close:active {
+    opacity: 0.6;
+  }
 }
 
 .popup input,
@@ -107,4 +116,16 @@
   background-position: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.popup input:hover,
+.popup input:focus,
+.popup textarea:hover,
+.popup textarea:focus {
+  opacity: 0.8;
+}
+
+.popup input:active,
+.popup textarea:active {
+  opacity: 0.6;
 }
