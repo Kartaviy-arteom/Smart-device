@@ -83,3 +83,49 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .first-screen {
+    background-image: url("../img/first-screen-background-tablet@1x.png"),
+                      url("../img/circuit-board-tablet@1x.png"),
+                      url("../img/triangles-tablet.svg");
+    background-position: 50%, 100% 113px, 65% 0;
+    background-size: cover, 260px 340px, 770px 684px;
+
+    &__good {
+      padding-top: 88px;
+      padding-left: 34px;
+      width: 350px;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: 0.07em;
+    }
+
+    &__wrapper {
+      width: 86%;
+    }
+
+    &__directions {
+      padding-left: 84px;
+      padding-bottom: 57px;
+      font-size: 18px;
+      line-height: 156.8%;
+      width: 360px;
+    }
+
+    &__directions::before {
+      width: 33px;
+      left: 37px;
+    }
+
+    &__btn {
+      margin-left: 85px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 163px;
+    }
+
+    &__scroll {
+      display: none;
+    }
+  }
+}

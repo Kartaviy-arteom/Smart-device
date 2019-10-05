@@ -55,6 +55,7 @@
   }
 
   &__card--suppliers {
+    margin-bottom: 16px;
     background-image: url(../img/hired-icon.svg);
   }
 
@@ -76,6 +77,56 @@
     & .advantages__subtitle {
       color: #fff;
     }
+  }
+
+  &__card p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    margin-top: 54px;
+    background: #fff;
+
+    &__list {
+      width: 93.5%;
+    }
+
+    &__card {
+      min-height: 306px;
+      padding-right: 1.34em;
+      width: 48%;
+      border-width: 2px;
+      background-position: 27px 22px;
+      padding-top: 67px;
+      padding-left: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    &__card:nth-child(n+2) {
+      min-height: 232px;
+    }
+
+    &__card--term {
+      background-color: #fff;
+      color: $font-color;
+      background-image: url(../img/watch-tablet.svg);
+      border: 1px solid $advantages-border-color;
+      border-left: 2px solid $advantages-color;
+
+      & .advantages__subtitle {
+        color: $advantages-color;
+      }
+    }
+
+    &__list {
+      margin-bottom: 26px;
+    }
+  }
+
+  .advantages__subtitle {
+    margin-bottom: 8px;
   }
 }
 

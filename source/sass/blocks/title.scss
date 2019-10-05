@@ -5,3 +5,9 @@
   font-family: "RobotoCondensed-Regular", Arial, sans-serif;
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 32px;
+  }
+}

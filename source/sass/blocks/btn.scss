@@ -22,3 +22,10 @@
 .btn:active {
   opacity: 0.6;
 }
+
+@media (max-width: 1024px) {
+  .btn {
+    line-height: 16px;
+    padding-bottom: 13px;
+  }
+}

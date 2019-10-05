@@ -34,3 +34,29 @@
     background-size: 220px 317px;
   }
 }
+
+@media (max-width: 1024px) {
+  .about-us__wrapper {
+    width: 93.5%;
+    background-image: url("../img/year-tablet@1x.png");
+    background-size: 244px 362px;
+    background-position: -25px -2px;
+  }
+
+  .about-us__title {
+    padding-left: 185px;
+  }
+
+  .about-us p {
+    padding-left: 185px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .about-us__btn {
+    margin-top: 23px;
+    margin-left: 188px;
+  }
+}
