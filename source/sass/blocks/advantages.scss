@@ -132,3 +132,49 @@
   }
 }
 
+@media (max-width: 768px) {
+  .advantages {
+    margin-top: 38px;
+
+    &__list {
+      width: 90%;
+      margin-bottom: 38px;
+    }
+
+    &__subtitle {
+      margin-bottom: 12px;
+      padding-right: 5px;
+      font-size: 20px;
+      line-height: 140.62%;
+    }
+
+    &__card {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-right: 10px;
+      background-position: 27px 24px;
+
+      p {
+        padding-bottom: 24px;
+      }
+    }
+
+    &__card--term {
+      background-size: 30px 36px;
+    }
+
+    &__card--suppliers {
+      background-size: 31px 32px;
+    }
+
+    &____card--confidentiality {
+      background-size: 30px 26px;
+    }
+
+    &__card--cost {
+      background-size: 32px 32px;
+    }
+  }
+}
+

@@ -311,3 +311,50 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer__top {
+    width: 90%;
+    padding-top: 46px;
+  }
+
+  .footer__years {
+    transform: translateX(-50%);
+    width: 240px;
+    top: 123px;
+    left: 50%;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+  }
+
+  .footer__social-list {
+    margin: 0 auto;
+    margin-top: 81px;
+  }
+
+  .footer__social::before {
+    top: 213px;
+  }
+
+  .footer__nav {
+    flex-basis: 100%;
+  }
+
+  .footer__social {
+    margin-bottom: 78px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left:50%;
+      transform: translateX(-50%);
+      background-color: #626962;
+      width: 100vw;
+      height: 1px;
+      opacity: 0.2;
+    }
+  }
+}
+

@@ -171,3 +171,23 @@
     background-image: url("../img/phone-icon.svg");
   }
 }
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    margin-top: 17px;
+    width: 90%;
+  }
+
+  .header__logo svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__company-name, .header__tagline {
+    display: none;
+  }
+
+  .header__contact li {
+    margin-right: 23px;
+  }
+}

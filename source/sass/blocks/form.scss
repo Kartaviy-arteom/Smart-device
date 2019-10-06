@@ -172,3 +172,45 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .form {
+    padding-top: 0;
+    padding-bottom: 42px;
+
+    &__wrapper {
+      width: 90%;
+      padding-top: 30px;
+
+      p {
+        padding-left: 0;
+        padding-top: 13px;
+        margin-bottom: 23px;
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+
+      textarea {
+        min-height: 104px;
+        max-height: 104px;
+        margin-bottom: 31px;
+      }
+
+      input[type=checkbox]~label {
+        width: 100%;
+        padding-left: 33px;
+      }
+
+      input[type=submit] {
+        margin-bottom: 20px;
+      }
+
+      input[type=checkbox]~label::after, input[type=checkbox]~label::before {
+        left: -2px;
+      }
+    }
+  }
+}

@@ -124,11 +124,11 @@
     &--production {
       background-image: url("../img/background-goods-1-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
     }
-    .card--mounting {
+    &--mounting {
       background-image: url("../img/background-goods-2-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
     }
 
-    .card--components {
+    &--components {
       background-image: url("../img/background-goods-3-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
     }
 
@@ -137,6 +137,25 @@
       width: 160px;
     }
   }
+}
 
+@media (max-width: 768px) {
+  .card h3 {
+    padding-top: 20px;
+    padding-left: 33px;
+  }
 
+  .card {
+
+    &--production {
+      background-image: url("../img/background-goods-1-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+    &--mounting {
+      background-image: url("../img/background-goods-2-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+
+    &--components {
+      background-image: url("../img/background-goods-3-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+  }
 }
