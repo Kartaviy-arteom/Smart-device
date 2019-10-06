@@ -35,3 +35,19 @@
 .service__card:nth-child(3n) {
   margin-right: 0;
 }
+
+@media (max-width: 1024px) {
+  .service {
+    &__wrapper {
+      width: 93.5%;
+    }
+
+    &__title {
+      padding-top: 51px;
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+}

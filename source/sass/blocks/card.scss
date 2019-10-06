@@ -116,3 +116,20 @@
     background-image: url("../img/background-goods-3-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
   }
 }
+
+@media (max-width: 1024px) {
+  .card {
+    min-height: 256px;
+
+    &--production {
+      background-image: url("../img/background-goods-1-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+    .card--mounting {
+      background-image: url("../img/background-goods-2-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+
+    .card--components {
+      background-image: url("../img/background-goods-3-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
+    }
+  }
+}

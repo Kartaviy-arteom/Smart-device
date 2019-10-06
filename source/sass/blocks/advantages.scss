@@ -87,7 +87,9 @@
 @media (max-width: 1024px) {
   .advantages {
     margin-top: 54px;
-    background: #fff;
+    background-image: url("..img/triangles/triangle-tablet.svg");
+    background-position: 50%;
+    background-size: 559px 873px;
 
     &__list {
       width: 93.5%;
