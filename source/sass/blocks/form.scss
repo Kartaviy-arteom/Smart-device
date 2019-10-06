@@ -129,3 +129,46 @@
 .form__wrapper textarea:active {
   opacity: 0.6;
 }
+
+@media (max-width: 1024px) {
+  .form {
+    background: $advantages-color;
+    padding-bottom: 62px;
+
+    &__wrapper {
+      padding-top: 80px;
+      width: 77%;
+      margin: 0 auto;
+
+      p {
+        padding-top: 16px;
+        padding-left: 3px;
+      }
+
+      form {
+        padding-top: 2px;
+      }
+
+      input {
+        margin-bottom: 44px;
+      }
+
+      textarea {
+        max-height: 159px;
+        min-height: 159px;
+      }
+
+      input[type=checkbox]~label {
+        padding-top: 11px;
+      }
+
+      input[type=checkbox]~label::after, input[type=checkbox]~label::before {
+        top: 11px;
+      }
+    }
+
+    &__title {
+
+    }
+  }
+}
