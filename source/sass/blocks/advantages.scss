@@ -26,19 +26,37 @@
   &__card {
     width: 48.7%;
     min-height: 300px;
-    padding-top: 95px;
     box-sizing: border-box;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 22px;
-    padding-left: 2.75em;
-    padding-right: 2.5em;
     border: 1px solid $advantages-border-color;
     border-left: 3px solid $advantages-color;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position: 45px 40px;
+
+    h3 {
+      padding-left: 41px;
+      padding-right: 20px;
+    }
+
+
+    a {
+      padding-top: 95px;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-size: 35px;
+      background-position: 45px 40px;
+    }
+
+    a > p {
+      color: #666;
+      padding-left: 41px;
+      padding-right: 32px;
+      padding-bottom: 10px;
+    }
   }
 
   &__card:nth-child(2n+1) {
@@ -54,33 +72,51 @@
     line-height: 34px;
   }
 
-  &__card--suppliers {
-    margin-bottom: 16px;
+  &__card--suppliers a {
     background-image: url(../img/hired-icon.svg);
   }
 
-  &__card--confidentiality {
+  &__card--suppliers a:hover {
+    background-image:  url(../img/hired-icon-white.svg)
+  }
+
+  &__card--confidentiality a {
     background-image: url(../img/detective-icon.svg);
   }
 
-  &__card--cost {
+  &__card--confidentiality a:hover {
+    background-image: url(../img/detective-icon-white.svg);
+  }
+
+  &__card--cost a {
     background-image: url(../img/tag-icon.svg);
   }
 
-  &__card--term {
+  &__card--cost a:hover {
+    background-image: url(../img/tag-icon-white.svg);
+  }
+
+  &__card--term a {
+    background-image: url(../img/watch-icon-blue.svg);
+    background-size: 29px 35px;
+  }
+
+  &__card--term a:hover {
+    background-image: url(../img/watch-icon.svg);
+  }
+
+  &__card a:hover {
     color: #fff;
     background-color: $advantages-color;
-    background-image: url(../img/watch-icon.svg);
     border-color: transparent;
-    background-size: 30px 35px;
 
-    & .advantages__subtitle {
-      color: #fff;
+    p,h3 {
+      color: #FFF;
     }
   }
 
-  &__card p {
-    margin: 0;
+  &__subtitle {
+    color: $advantages-color;
   }
 }
 
@@ -97,38 +133,41 @@
 
     &__card {
       min-height: 306px;
-      padding-right: 1.34em;
       width: 48%;
       border-width: 2px;
-      background-position: 27px 22px;
-      padding-top: 67px;
-      padding-left: 1.5em;
       margin-bottom: 30px;
+
+      h3 {
+        padding-left: 24px;
+      }
+
+      a>p {
+        padding-left: 26px;
+        padding-right: 24px;
+        padding-bottom: 17px;
+      }
+    }
+
+    &__card a {
+      padding-top: 66px;
+      background-position: 27px 22px;
     }
 
     &__card:nth-child(n+2) {
       min-height: 232px;
     }
 
-    &__card--term {
-      background-color: #fff;
-      color: $font-color;
-      background-image: url(../img/watch-tablet.svg);
-      border: 1px solid $advantages-border-color;
-      border-left: 2px solid $advantages-color;
-
-      & .advantages__subtitle {
-        color: $advantages-color;
-      }
+    & .advantages__subtitle {
+      color: $advantages-color;
     }
 
     &__list {
       margin-bottom: 26px;
     }
-  }
 
-  .advantages__subtitle {
-    margin-bottom: 8px;
+    &__subtitle {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -152,11 +191,11 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 20px;
-      padding-right: 10px;
       background-position: 27px 24px;
 
-      p {
+      a>p {
         padding-bottom: 24px;
+        padding-right: 8px;
       }
     }
 
