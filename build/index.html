@@ -60,10 +60,10 @@
         <strong class="first-screen__good">Печатные платы</strong>
         <p class="first-screen__directions">производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a href="#" class="first-screen__btn btn"><span>Получить </span>бесплатную консультацию</a>
-        <span class="first-screen__scroll">Скролл вниз</span>
+        <a class="first-screen__scroll" href="#advantages">Скролл вниз</a>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__card advantages__card--term">
@@ -161,7 +161,8 @@
         </div>
         <div class="footer__nav">
           <h3 class="footer__title">Разделы сайта</h3>
-          <nav>
+          <button class="footer__btn footer__btn--nav footer__btn--close" aria-label="Показать меню"></button>
+          <nav class="footer__nav-list">
             <ul>
               <li class="footer__about"><a href="#">О компании</a></li>
               <li class="footer__equipment"><a href="#">Комплектующие</a></li>
@@ -175,7 +176,8 @@
         </div>
         <div class="footer__address">
           <h3 class="footer__title">Наш офис</h3>
-          <p><span>г. Мытищи, Олимпийский проспект, д.10</span><br>
+          <button class="footer__btn footer__btn--address footer__btn--close" aria-label="Показать меню"></button>
+          <p class="footer__address-list"><span>г. Мытищи, Олимпийский проспект, д.10</span><br>
             <a class="footer__phone" href="tel:+74955894050">+7 (495) 589-40-50</a><br>
             <a class="footer__phone" href="tel:+74950038767">+7 (925) 003-87-67</a><br>
             <a class="footer__phone" href="tel:+749592608079">+7 (926) 926-080-79</a><br>
@@ -192,17 +194,20 @@
       </div>
     </footer>
     <section class="popup">
-      <h2 class="popup__title title">Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form method="post" action="#" autocomplete="off">
-        <input type="text" placeholder="Имя" required="">
-        <input type="tel" placeholder="Телефон" required="">
-        <textarea placeholder="Ваш вопрос"></textarea>
-        <input type="submit" value="Отправить">
-        <input type="checkbox" name="assent" id="assent" checked="" required="">
-        <label for="assent">Я согласен на обработку персональных данных</label>
-      </form>
-      <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
+      <div class="popup__wrapper">
+        <h2 class="popup__title title">Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form method="post" action="#" autocomplete="off">
+          <input type="text" placeholder="Имя" required="" minlength="5">
+          <input type="tel" placeholder="Телефон" required="">
+          <textarea placeholder="Ваш вопрос"></textarea>
+          <input type="submit" value="Отправить">
+          <input type="checkbox" name="assent" id="assent" checked="" required="">
+          <label for="assent">Я согласен на обработку персональных данных</label>
+        </form>
+        <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
+      </div>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>

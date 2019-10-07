@@ -141,6 +141,8 @@
 
 @media (max-width: 768px) {
   .card h3 {
+    width: 100%;
+    box-sizing: border-box;
     padding-top: 20px;
     padding-left: 33px;
   }
