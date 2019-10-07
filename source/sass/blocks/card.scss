@@ -1,13 +1,17 @@
 .card {
   position: relative;
   min-height: 623px;
-  background-position: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #c4c4c4;
+  background-image: linear-gradient(#1B2D37 100%, #1B2D37 100%);
 
- a {
+  a {
     display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    position: absolute;
     width: 100%;
     height: 100%;
   }
@@ -19,19 +23,6 @@
   a:active {
     opacity: 0.6;
   }
-}
-
-.card--production {
-  background-image: url("../img/background-goods-1-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-
-}
-
-.card--mounting {
-  background-image: url("../img/background-goods-2-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-}
-
-.card--components {
-  background-image: url("../img/background-goods-3-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
 }
 
 .card h3 {
@@ -66,19 +57,6 @@
   padding-bottom: 63px;
 }
 
-.card--production {
-  background-image: url("../img/background-goods-1-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-
-}
-
-.card--mounting {
-  background-image: url("../img/background-goods-2-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-}
-
-.card--components {
-  background-image: url("../img/background-goods-3-desktop@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-}
-
 .card h3 {
   margin: 0;
   padding-top: 53px;
@@ -103,34 +81,9 @@
   background-image: url("../img/arrow.svg");
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .card--production {
-    background-image: url("../img/background-goods-1-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-  }
-
-  .card--mounting {
-    background-image: url("../img/background-goods-2-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-  }
-
-  .card--components {
-    background-image: url("../img/background-goods-3-desktop@2x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-  }
-}
-
 @media (max-width: 1024px) {
   .card {
     min-height: 256px;
-
-    &--production {
-      background-image: url("../img/background-goods-1-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
-    &--mounting {
-      background-image: url("../img/background-goods-2-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
-
-    &--components {
-      background-image: url("../img/background-goods-3-tablet@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
 
     h3 {
       padding-top: 41px;
@@ -145,19 +98,5 @@
     box-sizing: border-box;
     padding-top: 20px;
     padding-left: 33px;
-  }
-
-  .card {
-
-    &--production {
-      background-image: url("../img/background-goods-1-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
-    &--mounting {
-      background-image: url("../img/background-goods-2-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
-
-    &--components {
-      background-image: url("../img/background-goods-3-mobile@1x.png"), linear-gradient(#1B2D37 100%, #1B2D37 100%);
-    }
   }
 }

@@ -129,6 +129,14 @@
       display: none;
     }
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .first-screen {
+      background-image: url("../img/first-screen-background-tablet@2x.png"),
+                        url("../img/circuit-board-tablet@2x.png"),
+                        url("../img/triangles-tablet.svg");
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -176,6 +184,14 @@
       span {
         display: none;
       }
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .first-screen {
+      background-image: url("../img/first-screen-background-mobile@2x.png"),
+                        url("../img/circuit-board-mobile@2x.png"),
+                        url("../img/triangles/triangle-mobile.svg");
     }
   }
 }

@@ -44,6 +44,12 @@
     background-position: -25px -2px;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about-us__wrapper {
+      background-image: url("../img/year-tablet@2x.png");
+    }
+  }
+
   .about-us__title {
     padding-left: 185px;
   }
