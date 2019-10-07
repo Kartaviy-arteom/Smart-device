@@ -1,4 +1,14 @@
 .popup {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup__wrapper {
   display: none;
   position: absolute;
   box-sizing: border-box;

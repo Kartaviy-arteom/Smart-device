@@ -62,6 +62,7 @@
 
 .footer__bottom {
   position: relative;
+  padding-bottom: 11px;
 }
 
 .footer__bottom::before {
@@ -152,8 +153,12 @@
   margin-right: 5%;
 }
 
-.footer__years {
+.footer__conditions {
   margin-right: auto;
+}
+
+.footer__years {
+  margin-right: 10.4%;
 }
 
 .footer__social a:hover,
