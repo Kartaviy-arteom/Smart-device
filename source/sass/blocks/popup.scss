@@ -1,11 +1,15 @@
 .popup {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show__popup {
+	display: block;
 }
 
 .popup__wrapper {
