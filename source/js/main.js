@@ -9,6 +9,15 @@
 	var popupCloseButton = document.querySelector('.popup__button-close');
 	var popupSubmitBtn = document.querySelector('.popup input[type="submit"]');
 	var popupForm = document.querySelector('.popup form');
+	var footerNavToogle = document.querySelector('.footer__btn');
+	var footerNav = document.querySelector('.footer__nav ul')
+
+	if (footerNavToogle) {
+		footerNavToogle.addEventListener('click', function(evtToggle) {
+			footerNavToogle.classList.toggle('myCssClass');
+			footerNav.classList.toggle('.show');
+		})	
+	};
 
 	
 
@@ -45,4 +54,6 @@
 	if (popup && orderCallBtn) {
 		orderCallBtn.addEventListener('click', onOrderCallBtnClick); 
 	};
+
+
 })();
