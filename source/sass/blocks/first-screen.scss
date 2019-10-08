@@ -2,8 +2,8 @@
   padding-top: 100px;
   background-color: $first-screen-color;
   background-image: url("../img/first-screen-background-desktop@1x.png"),
-                    url("../img/circuit-board-desktop@1x.png"),
-                    url("../img/triangles.svg");
+    url("../img/circuit-board-desktop@1x.png"),
+    url("../img/triangles.svg");
   background-size: cover, auto, cover;
   background-repeat: no-repeat;
   background-position: 80% 50%, 85.3% 70.9%;
@@ -18,7 +18,7 @@
     display: inline-block;
     padding-top: 215px;
     padding-bottom: 27px;
-    font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+    font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
@@ -43,7 +43,7 @@
     height: 2px;
     left: 2px;
     top: 16px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &__btn {
@@ -65,12 +65,11 @@
     position: absolute;
     top: 734px;
     left: 11.3%;
-    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    opacity: .5;
+    opacity: 0.5;
     font-size: 14px;
     line-height: 16px;
-    color: #fff;
+    color: #ffffff;
   }
 }
 
@@ -78,8 +77,8 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .first-screen {
     background-image: url("../img/first-screen-background-desktop@2x.png"),
-                      url("../img/circuit-board-desktop@2x.png"),
-                      url("../img/triangles.svg");
+      url("../img/circuit-board-desktop@2x.png"),
+      url("../img/triangles.svg");
     background-size: cover, 705px 515px, cover;
   }
 }
@@ -87,9 +86,9 @@
 @media (max-width: 1024px) {
   .first-screen {
     background-image: url("../img/first-screen-background-tablet@1x.png"),
-                      url("../img/circuit-board-tablet@1x.png"),
-                      url("../img/triangles-tablet.svg");
-    background-position: 50%, 100% 113px, 65% 0;
+      url("../img/circuit-board-tablet@1x.png"),
+      url("../img/triangles-tablet.svg");
+    background-position: 50%, right 0 top 113px, right 0 top 0;
     background-size: cover, 260px 340px, 770px 684px;
 
     &__good {
@@ -133,8 +132,8 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .first-screen {
       background-image: url("../img/first-screen-background-tablet@2x.png"),
-                        url("../img/circuit-board-tablet@2x.png"),
-                        url("../img/triangles-tablet.svg");
+        url("../img/circuit-board-tablet@2x.png"),
+        url("../img/triangles-tablet.svg");
     }
   }
 }
@@ -142,10 +141,10 @@
 @media (max-width: 768px) {
   .first-screen {
     background-image: url("../img/first-screen-background-mobile@1x.png"),
-                      url("../img/circuit-board-mobile@1x.png"),
-                      url("../img/triangles/triangle-mobile.svg");
+      url("../img/circuit-board-mobile@1x.png"),
+      url("../img/triangles/triangle-mobile.svg");
     background-size: cover, 294px 220px, 320px 529px;
-    background-position: 50%, 95% 92px,65% 0;
+    background-position: 50%, right 0 top 92px, right 0 top 0;
     padding-bottom: 70px;
 
     &__wrapper {
@@ -190,8 +189,8 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .first-screen {
       background-image: url("../img/first-screen-background-mobile@2x.png"),
-                        url("../img/circuit-board-mobile@2x.png"),
-                        url("../img/triangles/triangle-mobile.svg");
+        url("../img/circuit-board-mobile@2x.png"),
+        url("../img/triangles/triangle-mobile.svg");
     }
   }
 }

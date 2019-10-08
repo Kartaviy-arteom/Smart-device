@@ -4,10 +4,10 @@
   padding-bottom: 3px;
   margin-top: 109px;
   background-repeat: no-repeat;
-  background-image: url(../img/triangles/triangle-1.svg),
-                    url(../img/triangles/triangle-2.svg),
-                    url(../img/triangles/triangle-3.svg),
-                    url(../img/triangles/triangle-4.svg);
+  background-image: url("../img/triangles/triangle-1.svg"),
+    url("../img/triangles/triangle-2.svg"),
+    url("../img/triangles/triangle-3.svg"),
+    url("../img/triangles/triangle-4.svg");
   background-position: 0 330px, 53% 33px, 98.3% 346px, 13% -66px;
 
   &__list {
@@ -20,7 +20,6 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    list-style: none;
   }
 
   &__card {
@@ -45,14 +44,14 @@
       display: block;
       width: 100%;
       height: 100%;
-      background-color: #fff;
+      background-color: #ffffff;
       background-repeat: no-repeat;
       background-size: 35px;
       background-position: 45px 40px;
     }
 
     a > p {
-      color: #666;
+      color: #666666;
       padding-left: 41px;
       padding-right: 32px;
       padding-bottom: 10px;
@@ -66,57 +65,54 @@
   &__subtitle {
     margin: 0;
     margin-bottom: 15px;
-    font-family: "RobotoCondensed-Regular", Arial, sans-serif;
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     color: $advantages-color;
     font-size: 24px;
     line-height: 34px;
   }
 
   &__card--suppliers a {
-    background-image: url(../img/hired-icon.svg);
+    background-image: url("../img/hired-icon.svg");
   }
 
   &__card--suppliers a:hover {
-    background-image:  url(../img/hired-icon-white.svg)
+    background-image: url("../img/hired-icon-white.svg");
   }
 
   &__card--confidentiality a {
-    background-image: url(../img/detective-icon.svg);
+    background-image: url("../img/detective-icon.svg");
   }
 
   &__card--confidentiality a:hover {
-    background-image: url(../img/detective-icon-white.svg);
+    background-image: url("../img/detective-icon-white.svg");
   }
 
   &__card--cost a {
-    background-image: url(../img/tag-icon.svg);
+    background-image: url("../img/tag-icon.svg");
   }
 
   &__card--cost a:hover {
-    background-image: url(../img/tag-icon-white.svg);
+    background-image: url("../img/tag-icon-white.svg");
   }
 
   &__card--term a {
-    background-image: url(../img/watch-icon-blue.svg);
+    background-image: url("../img/watch-icon-blue.svg");
     background-size: 29px 35px;
   }
 
   &__card--term a:hover {
-    background-image: url(../img/watch-icon.svg);
+    background-image: url("../img/watch-icon.svg");
   }
 
   &__card a:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: $advantages-color;
     border-color: transparent;
 
-    p,h3 {
-      color: #FFF;
+    p,
+    h3 {
+      color: #ffffff;
     }
-  }
-
-  &__subtitle {
-    color: $advantages-color;
   }
 }
 
@@ -129,6 +125,7 @@
 
     &__list {
       width: 93.5%;
+      margin-bottom: 26px;
     }
 
     &__card {
@@ -141,7 +138,7 @@
         padding-left: 24px;
       }
 
-      a>p {
+      a > p {
         padding-left: 26px;
         padding-right: 24px;
         padding-bottom: 17px;
@@ -159,10 +156,6 @@
 
     & .advantages__subtitle {
       color: $advantages-color;
-    }
-
-    &__list {
-      margin-bottom: 26px;
     }
 
     &__subtitle {
@@ -193,7 +186,7 @@
       margin-bottom: 20px;
       background-position: 27px 24px;
 
-      a>p {
+      a > p {
         padding-bottom: 24px;
         padding-right: 8px;
       }

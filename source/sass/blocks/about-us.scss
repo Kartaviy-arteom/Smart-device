@@ -13,7 +13,6 @@
 }
 
 .about-us {
-
   & p {
     margin: 0;
     margin-bottom: 20px;
@@ -56,9 +55,9 @@
 
   .about-us p {
     padding-left: 185px;
-    display: -webkit-box;
+    display: box;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    box-orient: vertical;
     overflow: hidden;
   }
 
@@ -72,7 +71,7 @@
   .about-us__wrapper {
     width: 90%;
     padding-bottom: 62px;
-    background: #fff;
+    background: #ffffff;
   }
 
   .about-us__title {

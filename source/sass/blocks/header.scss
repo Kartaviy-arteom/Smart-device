@@ -14,14 +14,14 @@
   }
 
   &__company-name {
-    font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+    font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__tagline {
-    font-family: "Roboto-Medium", Arial, sans-serif;
+    font-family: "Roboto-Medium", "Arial", sans-serif;
     font-size: 12px;
     line-height: 14px;
     color: #788891;
@@ -55,7 +55,7 @@
 
   &__contact a:not(.btn) {
     position: relative;
-    font-family: "PTMono-Regular", Arial, sans-serif;
+    font-family: "PTMono-Regular", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     align-self: center;
@@ -64,6 +64,7 @@
   &__order-call {
     margin-left: 3.5%;
     margin-right: 6px;
+    margin-top: 4px;
     border-color: $header-font-color;
   }
 
@@ -105,10 +106,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-}
-
-.header__order-call {
-  margin-top: 4px;
 }
 
 .header a:hover,
@@ -183,7 +180,8 @@
     height: 38px;
   }
 
-  .header__company-name, .header__tagline {
+  .header__company-name,
+  .header__tagline {
     display: none;
   }
 

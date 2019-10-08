@@ -7,7 +7,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 
-    &__button-close {
+  &__button-close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -19,7 +19,7 @@
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../img/btn-close-icon.svg);
+    background-image: url("../img/btn-close-icon.svg");
   }
 }
 
@@ -34,7 +34,8 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 490px;
+  width: 100%;
+  max-width: 490px;
   background-color: $advantages-color;
   color: #ffffff;
 
@@ -66,7 +67,7 @@
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #fff;
+  color: #ffffff;
   padding: 14px 16px;
   line-height: 22px;
 }
@@ -84,9 +85,9 @@
 }
 
 .popup input[type="submit"] {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 5px;
-  font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -100,7 +101,7 @@
   display: none;
 }
 
-.popup input[type="checkbox"]~label {
+.popup input[type="checkbox"] ~ label {
   display: block;
   position: relative;
   user-select: none;
@@ -110,8 +111,8 @@
   cursor: pointer;
 }
 
-.popup input[type="checkbox"]~label::before,
-.popup input[type="checkbox"]~label::after {
+.popup input[type="checkbox"] ~ label::before,
+.popup input[type="checkbox"] ~ label::after {
   position: absolute;
   content: "";
   width: 16px;
@@ -120,11 +121,11 @@
   top: 0;
 }
 
-.popup input[type="checkbox"]~label::before {
-  border: 1px solid #FFFFFF;
+.popup input[type="checkbox"] ~ label::before {
+  border: 1px solid #ffffff;
 }
 
-.popup input[type="checkbox"]:checked~label::after {
+.popup input[type="checkbox"]:checked ~ label::after {
   background-image: url("../img/check-icon.svg");
   background-position: 50%;
   background-size: contain;

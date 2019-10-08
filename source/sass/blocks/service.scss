@@ -1,19 +1,16 @@
 .service {
-  background-color: #1B2D37;
+  background-color: #1b2d37;
 }
 
 .service__title {
-    color: #ffffff;
+  color: #ffffff;
+  padding-top: 89px;
+  margin-bottom: 47px;
 }
 
 .service__wrapper {
   width: 61%;
   margin: 0 auto;
-}
-
-.service__title {
-  padding-top: 89px;
-  margin-bottom: 47px;
 }
 
 .service__list {
@@ -57,7 +54,6 @@
 
 @media (max-width: 768px) {
   .service {
-
     &__wrapper {
       width: 90%;
       padding-bottom: 34px;

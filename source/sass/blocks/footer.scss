@@ -3,15 +3,11 @@
   padding-bottom: 57px;
   width: 74%;
   margin: 0 auto;
-  color: #1B2D37;
+  color: #1b2d37;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
-
-.footer__nav-list {
-
 }
 
 .footer__btn {
@@ -25,7 +21,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  color: #203C42;
+  color: #203c42;
 
   & div {
     padding-left: 18px;
@@ -39,14 +35,14 @@
 
 .footer {
   &__company-name {
-    font-family: "RobotoCondensed-Bold", Arial, sans-serif;
+    font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
   }
 
   &__tagline {
-    font-family: "Roboto-Medium", Arial, sans-serif;
+    font-family: "Roboto-Medium", "Arial", sans-serif;
     font-size: 12px;
     line-height: 14px;
     color: #788891;
@@ -101,14 +97,15 @@
   }
 }
 
-.footer__address  span, .footer__address a {
+.footer__address span,
+.footer__address a {
   margin-bottom: 5px;
   display: inline-block;
 }
 
 .footer__title {
   margin: 0;
-  font-family: "RobotoCondensed-Regular", Arial, sans-serif;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -134,7 +131,7 @@
 .footer__nav a,
 .footer__address span,
 .footer__address a {
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -153,7 +150,7 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -171,7 +168,7 @@
 
 .footer__social a:hover,
 .footer__social a:focus {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 .footer__social a:active {
@@ -179,11 +176,14 @@
 }
 
 .footer__nav a:hover,
-.footer__nav a:focus {
+.footer__nav a:focus,
+.footer__wrapper a:hover,
+.footer__wrapper a:focus {
   opacity: 1;
 }
 
-.footer__nav a:active {
+.footer__nav a:active,
+.footer__wrapper a:active {
   opacity: 0.8;
 }
 
@@ -210,7 +210,7 @@
       content: "";
       position: absolute;
       bottom: 18px;
-      left:50%;
+      left: 50%;
       transform: translateX(-50%);
       background-color: #626962;
       width: 100vw;
@@ -242,7 +242,7 @@
       content: "";
       position: absolute;
       top: 76px;
-      left:50%;
+      left: 50%;
       transform: translateX(-50%);
       background-color: #626962;
       width: 100vw;
@@ -266,7 +266,7 @@
   }
 
   .footer__social-list {
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 12px;
 
     li:last-child {
@@ -278,7 +278,8 @@
     display: none;
   }
 
-  .footer__nav, .footer__address {
+  .footer__nav,
+  .footer__address {
     flex-basis: 50%;
   }
 
@@ -350,15 +351,13 @@
     top: 213px;
   }
 
-  .footer__nav {
-    flex-basis: 100%;
-  }
-
   .footer__social {
     margin-bottom: 78px;
+    flex-direction: column;
   }
 
   .footer__nav {
+    flex-basis: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -370,7 +369,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: #626962;
     width: 100vw;
@@ -383,14 +382,14 @@
     position: relative;
     width: 16px;
     height: 16px;
-    background-color: #fff;
+    background-color: #ffffff;
     cursor: pointer;
     border: none;
   }
 
   .footer__btn::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 1px;
     height: 16px;
     background-color: #c4c4c4;
@@ -400,7 +399,7 @@
 
   .footer__btn--close::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 17px;
     height: 1px;
     background-color: #c4c4c4;
@@ -408,12 +407,20 @@
     left: 0;
   }
 
-  .footer__nav-list, .footer__address-list {
+  .footer__nav-list,
+  .footer__address-list {
     display: none;
   }
 
   .show {
     display: block;
+  }
+
+  .footer__conditions,
+  .footer__studio {
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .footer__address {
@@ -423,15 +430,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .footer__conditions, .footer__studio {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer__address {
     padding-top: 26px;
 
     h3 {
@@ -439,9 +437,12 @@
     }
 
     p {
+      width: 100%;
       line-height: 25px;
     }
-    a, span {
+
+    a,
+    span {
       margin-bottom: 0;
     }
   }
