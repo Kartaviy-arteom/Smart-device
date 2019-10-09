@@ -128,7 +128,8 @@
 .popup input[type="checkbox"]:checked ~ label::after {
   background-image: url("../img/check-icon.svg");
   background-position: 50%;
-  background-size: contain;
+  background-size: 8px 5px;
+  left: -15px;
   background-repeat: no-repeat;
 }
 
@@ -139,7 +140,13 @@
   opacity: 0.8;
 }
 
+.popup input[type="checkbox"]:hover ~ label,
+.popup input[type="checkbox"]:focus ~ label {
+  opacity: 1;
+}
+
 .popup input:active,
-.popup textarea:active {
+.popup textarea:active,
+.popup input[type="checkbox"]:active ~ label {
   opacity: 0.6;
 }

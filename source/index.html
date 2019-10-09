@@ -149,9 +149,12 @@
         <p>Мы проконсультируем Вас бесплатно</p>
         <form method="post" action="#" autocomplete="off">
           <div>
+            <label class="visually-hidden" for="name">Введите ваше имя</label>
             <input id="name" name="name" type="text" placeholder="Имя" minlength="5" maxlength="100" required>
+            <label class="visually-hidden" for="tel">Введите свой телефон</label>
             <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
-            <textarea placeholder="Ваш вопрос" required></textarea>
+            <label class="visually-hidden" for="question">Напишите здесь свой вопрос</label>
+            <textarea id="question" placeholder="Ваш вопрос" required></textarea>
             <input type="submit" value="Задать вопрос">
             <input type="checkbox" name="agree" id="agree" checked required>
             <label for="agree">Я согласен на обработку  персональных данных</label>

@@ -19,13 +19,13 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .service__card {
   width: 31.5%;
-  margin-right: auto;
+  margin-right: 2.75%;
   margin-bottom: 127px;
 }
 
@@ -33,7 +33,7 @@
   margin-right: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .service {
     &__wrapper {
       width: 93.5%;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .service {
     &__wrapper {
       width: 90%;

@@ -90,7 +90,7 @@
 }
 
 .footer__address {
-  flex-basis: 25%;
+  flex-basis: 24%;
 
   p {
     margin: 0;
@@ -131,6 +131,7 @@
 .footer__nav a,
 .footer__address span,
 .footer__address a {
+  font-size: 15px;
   color: #1b2d37;
   opacity: 0.5;
 }
@@ -196,7 +197,7 @@
   opacity: 0.8;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .footer {
     position: relative;
   }
@@ -325,12 +326,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer__top {
+    padding-bottom: 33px;
     width: 90%;
     padding-top: 46px;
   }
-  
+
   .footer__bottom {
     padding-bottom: 0;
   }
@@ -367,6 +369,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    nav {
+      padding-bottom: 23px;
+    }
   }
 
   .footer__nav::after {
@@ -394,21 +400,21 @@
   .footer__btn::before {
     position: absolute;
     content: "";
-    width: 1px;
-    height: 16px;
-    background-color: #c4c4c4;
-    top: 0;
-    left: 50%;
-  }
-
-  .footer__btn--close::after {
-    position: absolute;
-    content: "";
     width: 17px;
     height: 1px;
     background-color: #c4c4c4;
     top: 50%;
     left: 0;
+  }
+
+  .footer__btn--close::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: #c4c4c4;
+    top: 0;
+    left: 50%;
   }
 
   .footer__nav-list,
@@ -437,10 +443,11 @@
     padding-top: 26px;
 
     h3 {
-      margin-bottom: 33px;
+      margin-bottom: 30px;
     }
 
     p {
+      padding-bottom: 23px;
       width: 100%;
       line-height: 25px;
     }

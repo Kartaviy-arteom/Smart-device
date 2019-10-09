@@ -114,6 +114,7 @@
 .form__wrapper input[type="checkbox"]:checked ~ label::after {
   background-image: url("../img/check-icon.svg");
   background-position: 50%;
+  background-size: 8px 5px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -125,12 +126,18 @@
   opacity: 0.8;
 }
 
+.form__wrapper input[type=checkbox]:hover ~ label,
+.form__wrapper input[type=checkbox]:focus ~ label {
+  opacity: 1;
+}
+
 .form__wrapper input:active,
-.form__wrapper textarea:active {
+.form__wrapper textarea:active,
+.form__wrapper input[type=checkbox]:active ~ label {
   opacity: 0.6;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .form {
     background: $advantages-color;
     padding-bottom: 62px;
@@ -170,7 +177,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form {
     padding-top: 0;
     padding-bottom: 42px;

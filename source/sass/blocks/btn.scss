@@ -11,8 +11,8 @@
   min-width: 180px;
   border-radius: 5px;
   box-sizing: border-box;
-  padding-top: 14px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .btn:hover,
@@ -24,7 +24,7 @@
   opacity: 0.6;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .btn {
     line-height: 16px;
     padding-bottom: 13px;
