@@ -16,6 +16,7 @@
 .service__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 100px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -26,7 +27,7 @@
 .service__card {
   width: 31.5%;
   margin-right: 2.75%;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
 }
 
 .service__card:nth-child(3n) {
