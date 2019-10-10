@@ -10,35 +10,58 @@
   var popupSubmitBtn = document.querySelector('.popup input[type="submit"]');
   var popupForm = document.querySelector('.popup form');
   var popupFirstInput = document.querySelector('input:first-child');
-  var footerNavToogle = document.querySelector('.footer__btn--nav');
+
+  var foorNavTogglete = document.querySelector('.footer__btn--nav');
   var footerNav = document.querySelector('.footer__nav-list');
   var footerAddress = document.querySelector('.footer__address-list');
-  var footerAddressToogle = document.querySelector('.footer__btn--address');
-  var isFooterNavOpen = false;
-  var isFooterAddressOpen = false;
+  var footerAddressToggle = document.querySelector('.footer__btn--address');
 
-  var showMenu = function(toogle, menu, isOpen, secondToogle, secondMenu, isSecondOpen) {
-    if (toogle && menu) {
-      toogle.addEventListener('click', function(evtToggle) {
-        isOpen = switchMenu(toogle, menu, isOpen);
-        alert(isOpen);
-        if (isSecondOpen) {
-          switchMenu(secondToogle, secondMenu, isSecondOpen);
-        }
-      })
-    }
+  var firstMenu = {
+    toggle: foorNavTogglete,
+    block: footerNav
+  };
+  var secondMenu = {
+    toggle: footerAddressToggle,
+    block: footerAddress
   };
 
-  var switchMenu = function(toogle, menu, isOpen) {
-    toogle.classList.toggle('footer__btn--close');
-    menu.classList.toggle('show');
-    isOpen = !isOpen;
-    return isOpen;
+  var menues = [firstMenu, secondMenu];
+  menues.forEach(function (el, index) {
+    el.toggle.addEventListener('click', function(evt) {
+      closeMenues(index);
+      el.toggle.classList.toggle('footer__btn--close');
+      el.block.classList.toggle('show');
+    })
+  });
+
+  var closeMenues = function (index) {
+    menues.forEach(function (el, j) {
+      if (index !== j) {
+        el.toggle.classList.add('footer__btn--close');
+        el.block.classList.remove('show');
+      }
+    });
   };
 
+  var phoneMask = IMask(
+  document.getElementById('tel'), {
+    mask: '+{7}(000)000-00-00'
+  });
 
-  showMenu(footerNavToogle, footerNav, isFooterNavOpen, footerAddressToogle, footerAddress, isFooterAddressOpen);
-  showMenu(footerAddressToogle, footerAddress, isFooterAddressOpen, footerNavToogle, footerNav, isFooterNavOpen);
+  var popupPhoneMask =  IMask(
+  document.getElementById('popup-tel'), {
+    mask: '+{7}(000)000-00-00'
+  });
+
+  var trigger = document.querySelector('.js-trigger');
+  var moveTo = new MoveTo();
+  var target = document.getElementById('advantages');
+  var onTriggerClick = function () {
+    moveTo.registerTrigger(trigger);
+  };
+
+  trigger.addEventListener('click', onTriggerClick);
+
 
   var onOrderCallBtnClick = function (evt) {
     var closePopup = function () {

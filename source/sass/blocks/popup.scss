@@ -61,7 +61,8 @@
 }
 
 .popup input,
-.popup textarea {
+.popup textarea,
+.popup button[type="submit"] {
   margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
@@ -84,7 +85,7 @@
   opacity: 1;
 }
 
-.popup input[type="submit"] {
+.popup button[type="submit"] {
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;

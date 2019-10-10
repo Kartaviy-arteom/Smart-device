@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
+  <meta name="Description" content="test project liga-a by Kartaviy Arteom">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
@@ -60,7 +61,7 @@
         <strong class="first-screen__good">Печатные платы</strong>
         <p class="first-screen__directions">производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a href="#" class="first-screen__btn btn"><span>Получить </span>бесплатную консультацию</a>
-        <a class="first-screen__scroll" href="#advantages">Скролл вниз</a>
+        <a class="first-screen__scroll js-trigger" data-mt-duration="1000" href="#advantages">Скролл вниз</a>
       </div>
     </section>
     <section class="advantages" id="advantages">
@@ -111,7 +112,7 @@
               <source type="image/webp" srcset="img/background-goods-1-desktop@1x.webp 1x, img/background-goods-1-desktop@2x.webp 2x">
               <source media="(max-width: 768px)" srcset="img/background-goods-1-mobile@1x.png 1x, img/background-goods-1-mobile@2x.png 2x">
               <source media="(max-width: 1024px)" srcset="img/background-goods-1-tablet@1x.png 1x, img/background-goods-1-tablet@2x.png 2x">
-              <img src="img/background-goods-1-desktop@1x.png" alt="Как мы классно делаем платы" width="370" height="620" srcset="img/background-goods-1-desktop@2x.png 2x">
+              <img src="img/background-goods-1-desktop@1x.png" alt="Производство плат лазерно-утюжноым методом с дорожками 0.3мм и просветом между ними до 0.2мм" width="370" height="620" srcset="img/background-goods-1-desktop@2x.png 2x">
             </picture>
             <h3>Производство печатных плат</h3>
             <div class="card__arrow"></div>
@@ -123,7 +124,7 @@
               <source type="image/webp" srcset="img/background-goods-2-desktop@1x.webp 1x, img/background-goods-2-desktop@2x.webp 2x">
               <source media="(max-width: 768px)" srcset="img/background-goods-2-mobile@1x.png 1x, img/background-goods-2-mobile@2x.png 2x">
               <source media="(max-width: 1024px)" srcset="img/background-goods-2-tablet@1x.png 1x, img/background-goods-2-tablet@2x.png 2x">
-              <img src="img/background-goods-2-desktop@1x.png" alt="Как мы классно делаем платы" width="370" height="620" srcset="img/background-goods-2-desktop@2x.png 2x">
+              <img src="img/background-goods-2-desktop@1x.png" alt="Автоматический монтаж плат с использованием киянки в среде инертных газов" width="370" height="620" srcset="img/background-goods-2-desktop@2x.png 2x">
             </picture>
             <h3>Монтаж печатных плат</h3>
             <div class="card__arrow"></div>
@@ -135,7 +136,7 @@
               <source type="image/webp" srcset="img/background-goods-3-desktop@1x.webp 1x, img/background-goods-3-desktop@2x.webp 2x">
               <source media="(max-width: 768px)" srcset="img/background-goods-3-mobile@1x.png 1x, img/background-goods-3-mobile@2x.png 2x">
               <source media="(max-width: 1024px)" srcset="img/background-goods-3-tablet@1x.png 1x, img/background-goods-3-tablet@2x.png 2x">
-              <img src="img/background-goods-3-desktop@1x.png" alt="Как мы классно делаем платы" width="370" height="620" srcset="img/background-goods-3-desktop@2x.png 2x">
+              <img src="img/background-goods-3-desktop@1x.png" alt="Комплектующие для светотехники: дросселя, ИЗУ, патроны и стартеры. Сделано в России (Made in China)." width="370" height="620" srcset="img/background-goods-3-desktop@2x.png 2x">
             </picture>
             <h3>Комплектующие для светотехники</h3>
             <div class="card__arrow"></div>
@@ -155,7 +156,7 @@
             <input id="tel" name="tel" type="tel" placeholder="Телефон" required="">
             <label class="visually-hidden" for="question">Напишите здесь свой вопрос</label>
             <textarea id="question" placeholder="Ваш вопрос" required=""></textarea>
-            <input type="submit" value="Задать вопрос">
+            <button type="submit">Задать вопрос</button>
             <input type="checkbox" name="agree" id="agree" checked="" required="">
             <label for="agree">Я согласен на обработку  персональных данных</label>
           </div>
@@ -223,8 +224,8 @@
         <div class="footer__wrapper">
           <a class="footer__rights" href="#">Все права защищены</a>
           <a class="footer__years" href="#">1999-2018 SD Service Devices</a>
-          <a class="footer__conditions" href="#">Условия конфиденциальности</a>
-          <a class="footer__studio" href="#">Developed by wow studio</a>
+          <a class="footer__conditions" href="#" title="Ознакомиться с условиями конфиденциальности">Условия конфиденциальности</a>
+          <a class="footer__studio" href="#" title="Перейти на сайт разработчика">Developed by wow studio</a>
         </div>
       </div>
     </footer>
@@ -233,16 +234,18 @@
         <h2 class="popup__title title">Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form method="post" action="#" autocomplete="off">
-          <input type="text" placeholder="Имя" required="" minlength="5">
-          <input type="tel" placeholder="Телефон" required="">
-          <textarea placeholder="Ваш вопрос"></textarea>
-          <input type="submit" value="Отправить">
+          <input name="user-name" type="text" placeholder="Имя" required="" minlength="5">
+          <input name="user-tel" type="tel" id="popup-tel" placeholder="Телефон" required="">
+          <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
+          <button type="submit">Отправить</button>
           <input type="checkbox" name="assent" id="assent" checked="" required="">
           <label for="assent">Я согласен на обработку персональных данных</label>
         </form>
         <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
       </div>
     </section>
+    <script src="js/moveTo.js"></script>
+    <script src="js/imask.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
