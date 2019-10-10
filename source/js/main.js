@@ -36,7 +36,7 @@
 
   var closeMenues = function (index) {
     menues.forEach(function (el, j) {
-      if (index !== j) {}
+      if (index !== j) {
         el.toggle.classList.add('footer__btn--close');
         el.block.classList.remove('show');
       }
