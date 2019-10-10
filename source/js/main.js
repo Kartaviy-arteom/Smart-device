@@ -56,7 +56,8 @@
   var trigger = document.querySelector('.js-trigger');
   var moveTo = new MoveTo();
   var target = document.getElementById('advantages');
-  var onTriggerClick = function () {
+  var onTriggerClick = function (evtS) {
+    evtS.preventDefault();
     moveTo.registerTrigger(trigger);
   };
 
