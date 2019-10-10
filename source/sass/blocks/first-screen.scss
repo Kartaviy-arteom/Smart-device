@@ -71,6 +71,15 @@
     line-height: 16px;
     color: #ffffff;
   }
+
+  &__scroll:hover,
+  &__scroll:focus {
+    opacity: 1;
+  }
+
+  &__scroll:active {
+    opacity: 0.8;
+  }
 }
 
 
