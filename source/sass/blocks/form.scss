@@ -1,13 +1,23 @@
 .form {
+  position: relative;
   padding-bottom: 71px;
   background-color: $advantages-color;
-  background-image: url(../img/paper-airplane@1x.png), url(../img/triangles/triangles-form.svg);
-  background-repeat: no-repeat;
-  background-position: 25% 162px, 15% 95px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/paper-airplane@1x.png), url(../img/triangles/triangles-form.svg);
+    background-repeat: no-repeat;
+    background-position: 77% 162px,56% 95px;
+  }
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .form {
+  .form::before {
     background-image: url(../img/paper-airplane@2x.png), url(../img/triangles/triangles-form.svg);
     background-size: 511px 288px, auto;
   }
@@ -146,6 +156,10 @@
     background: $advantages-color;
     padding-bottom: 62px;
 
+    &::before {
+      display: none;
+    }
+
     &__wrapper {
       padding-top: 80px;
       width: 77%;
@@ -223,3 +237,5 @@
     }
   }
 }
+
+
