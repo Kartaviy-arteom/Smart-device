@@ -16,6 +16,15 @@
   var footerAddressToogle = document.querySelector('.footer__btn--address');
   var isFooterNavOpen = false;
   var isFooterAddressOpen = false;
+  var phoneMask = IMask(
+  document.getElementById('tel'), {
+    mask: '+{7}(000)000-00-00'
+  });
+
+  var popupPhoneMask =  IMask(
+  document.getElementById('popup-tel'), {
+    mask: '+{7}(000)000-00-00'
+  });
 
   var showMenu = function(toogle, menu, isOpen, secondToogle, secondMenu, isSecondOpen) {
     if (toogle && menu) {
@@ -28,6 +37,15 @@
       })
     }
   };
+
+  var trigger = document.querySelector('.js-trigger');
+  var moveTo = new MoveTo();
+  var target = document.getElementById('advantages');
+  var onTriggerClick = function () {
+    moveTo.registerTrigger(trigger);
+  };
+
+  trigger.addEventListener('click', onTriggerClick);
 
   var switchMenu = function(toogle, menu, isOpen) {
     toogle.classList.toggle('footer__btn--close');
