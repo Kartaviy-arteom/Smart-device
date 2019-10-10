@@ -1,15 +1,15 @@
 .form {
   padding-bottom: 71px;
   background-color: $advantages-color;
-  background-image: url("../img/triangles.svg"), url("../img/paper-airplane@1x.png");
+  background-image: url(../img/paper-airplane@1x.png), url(../img/triangles/triangles-form.svg);
   background-repeat: no-repeat;
-  background-position: -856px -177px, 350px 162px;
+  background-position: 25% 162px, 15% 95px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .form {
-    background-image: url("../img/triangles.svg"), url("../img/paper-airplane@2x.png");
-    background-size: auto, 511px 288px;
+    background-image: url(../img/paper-airplane@2x.png), url(../img/triangles/triangles-form.svg);
+    background-size: 511px 288px, auto;
   }
 }
 
