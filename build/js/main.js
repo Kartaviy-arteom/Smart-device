@@ -53,16 +53,10 @@
     mask: '+{7}(000)000-00-00'
   });
 
-  var trigger = document.querySelector('.js-trigger');
+
   var moveTo = new MoveTo();
-  var target = document.getElementById('advantages');
-  var onTriggerClick = function (evtS) {
-    evtS.preventDefault();
-    moveTo.registerTrigger(trigger);
-  };
-
-  trigger.addEventListener('click', onTriggerClick);
-
+  const trigger = document.getElementsByClassName('js-trigger')[0];
+  moveTo.registerTrigger(trigger);
 
   var onOrderCallBtnClick = function (evt) {
     var closePopup = function () {
