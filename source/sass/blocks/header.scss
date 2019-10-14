@@ -194,3 +194,9 @@
     margin-right: 23px;
   }
 }
+
+@media (min-width: 1024px) {
+  .header__wrapper {
+    min-width: 950px;
+  }
+}

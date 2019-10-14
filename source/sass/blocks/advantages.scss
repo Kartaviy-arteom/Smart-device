@@ -210,3 +210,9 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .advantages__list {
+    min-width: 950px;
+  }
+}
