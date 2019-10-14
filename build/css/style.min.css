@@ -8,4 +8,10 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .service__list {
+    padding-bottom: 0;
+  }
+}
+
 /*# sourceMappingURL=style.min.css.map */
